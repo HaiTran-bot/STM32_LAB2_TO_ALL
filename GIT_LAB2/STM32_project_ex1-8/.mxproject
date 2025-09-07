@@ -1,18 +1,18 @@
 [PreviousGenFiles]
 AdvancedFolderStructure=true
 HeaderFileListSize=3
-HeaderFiles#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Inc/stm32f1xx_it.h
-HeaderFiles#1=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Inc/stm32f1xx_hal_conf.h
-HeaderFiles#2=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Inc/main.h
+HeaderFiles#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Inc/stm32f1xx_it.h
+HeaderFiles#1=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Inc/stm32f1xx_hal_conf.h
+HeaderFiles#2=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Inc/main.h
 HeaderFolderListSize=1
-HeaderPath#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Inc
+HeaderPath#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Inc
 HeaderFiles=;
 SourceFileListSize=3
-SourceFiles#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Src/stm32f1xx_it.c
-SourceFiles#1=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Src/stm32f1xx_hal_msp.c
-SourceFiles#2=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Src/main.c
+SourceFiles#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Src/stm32f1xx_it.c
+SourceFiles#1=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Src/stm32f1xx_hal_msp.c
+SourceFiles#2=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Src/main.c
 SourceFolderListSize=1
-SourcePath#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_Project/Core/Src
+SourcePath#0=C:/Users/acer/Downloads/VXL/TEST/GIT_LAB2_TO_ALL/GIT_LAB2/STM32_project_ex1-8/Core/Src
 SourceFiles=;
 
 [PreviousLibFiles]
