@@ -73,6 +73,7 @@ int main(void)
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
+
   /* USER CODE BEGIN Init */
 
   /* USER CODE END Init */
@@ -90,17 +91,82 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
   /////////
-  display7SEG(1);
-  HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 0);
+  HAL_GPIO_WritePin(EN0_GPIO_Port, EN0_Pin, 1);
   HAL_GPIO_WritePin(EN1_GPIO_Port, EN1_Pin, 1);
+  HAL_GPIO_WritePin(EN2_GPIO_Port, EN2_Pin, 1);
+  HAL_GPIO_WritePin(EN3_GPIO_Port, EN3_Pin, 1);
   //initial , avoid floating
   ////////
   /* USER CODE END 2 */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  setTimer0(10);
+  setTimer1(10);
   while (1)
   {
     /* USER CODE END WHILE */
+	  //ex5
+//	  second++;
+//	      if (second >= 60) {
+//	          second = 0;
+//	          minute++;
+//	      }
+//	      if (minute >= 60) {
+//	          minute = 0;
+//	          hour++;
+//	      }
+//	      if (hour >= 24) {
+//	          hour = 0;
+//	      }
+//	      updateClockBuffer();
+//	      HAL_Delay(1000);
+
+	  //ex6
+//	  if(timer0_flag == 1){
+//	   HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
+//	   setTimer0(2000);
+//	   }
+	  //ex7
+//	  if(timer0_flag == 1){
+//		  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+//	  	  second++;
+//	  	      if (second >= 60) {
+//	  	          second = 0;
+//	  	          minute++;
+//	  	      }
+//	  	      if (minute >= 60) {
+//	  	          minute = 0;
+//	  	          hour++;
+//	  	      }
+//	  	      if (hour >= 24) {
+//	  	          hour = 0;
+//	  	      }
+//	  	    setTimer0(1000);
+//	  }
+//	  updateClockBuffer();
+	  //ex8
+	  if(timer0_flag == 1){
+	  		  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+	  	  	  second++;
+	  	  	      if (second >= 60) {
+	  	  	          second = 0;
+	  	  	          minute++;
+	  	  	      }
+	  	  	      if (minute >= 60) {
+	  	  	          minute = 0;
+	  	  	          hour++;
+	  	  	      }
+	  	  	      if (hour >= 24) {
+	  	  	          hour = 0;
+	  	  	      }
+	  	  	    setTimer0(1000); //dot every 1s
+	  }
+	  if(timer1_flag == 1){
+		  update7SEG(index_led++);
+		  setTimer1(250); // blink every 0.25s
+	  }
+	  	  updateClockBuffer();
 
     /* USER CODE BEGIN 3 */
   }
@@ -201,14 +267,17 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED_RED_Pin|EN0_Pin|EN1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, DOT_Pin|LED_RED_Pin|EN0_Pin|EN1_Pin
+                          |EN2_Pin|EN3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SEG1_Pin|SEG2_Pin|SEG3_Pin|SEG4_Pin
                           |SEG5_Pin|SEG6_Pin|SEG7_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LED_RED_Pin EN0_Pin EN1_Pin */
-  GPIO_InitStruct.Pin = LED_RED_Pin|EN0_Pin|EN1_Pin;
+  /*Configure GPIO pins : DOT_Pin LED_RED_Pin EN0_Pin EN1_Pin
+                           EN2_Pin EN3_Pin */
+  GPIO_InitStruct.Pin = DOT_Pin|LED_RED_Pin|EN0_Pin|EN1_Pin
+                          |EN2_Pin|EN3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
