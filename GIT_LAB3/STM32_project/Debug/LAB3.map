@@ -68,6 +68,8 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./Core/Src/button.o
  .group         0x0000000000000000        0xc ./Core/Src/button.o
  .group         0x0000000000000000        0xc ./Core/Src/button.o
+ .group         0x0000000000000000        0xc ./Core/Src/button.o
+ .group         0x0000000000000000        0xc ./Core/Src/button.o
  .text          0x0000000000000000        0x0 ./Core/Src/button.o
  .data          0x0000000000000000        0x0 ./Core/Src/button.o
  .bss           0x0000000000000000        0x0 ./Core/Src/button.o
@@ -83,12 +85,12 @@ Discarded input sections
                 0x0000000000000000       0x34 ./Core/Src/button.o
  .text.getKeyInput
                 0x0000000000000000      0x12c ./Core/Src/button.o
- .debug_info    0x0000000000000000      0x2fc ./Core/Src/button.o
+ .debug_info    0x0000000000000000      0x3a0 ./Core/Src/button.o
  .debug_abbrev  0x0000000000000000      0x152 ./Core/Src/button.o
  .debug_aranges
                 0x0000000000000000       0x28 ./Core/Src/button.o
  .debug_ranges  0x0000000000000000       0x18 ./Core/Src/button.o
- .debug_macro   0x0000000000000000      0x1bf ./Core/Src/button.o
+ .debug_macro   0x0000000000000000      0x1ef ./Core/Src/button.o
  .debug_macro   0x0000000000000000      0xa9c ./Core/Src/button.o
  .debug_macro   0x0000000000000000      0x215 ./Core/Src/button.o
  .debug_macro   0x0000000000000000       0x2e ./Core/Src/button.o
@@ -126,27 +128,129 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/button.o
  .debug_macro   0x0000000000000000      0x148 ./Core/Src/button.o
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/button.o
- .debug_line    0x0000000000000000      0x706 ./Core/Src/button.o
- .debug_str     0x0000000000000000    0x7fc4e ./Core/Src/button.o
+ .debug_macro   0x0000000000000000       0x40 ./Core/Src/button.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/button.o
+ .debug_line    0x0000000000000000      0x727 ./Core/Src/button.o
+ .debug_str     0x0000000000000000    0x7fd53 ./Core/Src/button.o
  .comment       0x0000000000000000       0x54 ./Core/Src/button.o
  .debug_frame   0x0000000000000000       0x5c ./Core/Src/button.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/button.o
- .group         0x0000000000000000        0xc ./Core/Src/global.o
- .text          0x0000000000000000        0x0 ./Core/Src/global.o
- .data          0x0000000000000000        0x0 ./Core/Src/global.o
- .bss           0x0000000000000000        0x0 ./Core/Src/global.o
- .debug_info    0x0000000000000000       0x21 ./Core/Src/global.o
- .debug_abbrev  0x0000000000000000       0x13 ./Core/Src/global.o
+ COMMON         0x0000000000000000        0x0 ./Core/Src/button.o
+ .group         0x0000000000000000        0xc ./Core/Src/fsm.o
+ .text          0x0000000000000000        0x0 ./Core/Src/fsm.o
+ .data          0x0000000000000000        0x0 ./Core/Src/fsm.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/fsm.o
+ .debug_info    0x0000000000000000       0x21 ./Core/Src/fsm.o
+ .debug_abbrev  0x0000000000000000       0x13 ./Core/Src/fsm.o
  .debug_aranges
-                0x0000000000000000       0x18 ./Core/Src/global.o
- .debug_macro   0x0000000000000000       0x11 ./Core/Src/global.o
- .debug_macro   0x0000000000000000      0xa9c ./Core/Src/global.o
- .debug_line    0x0000000000000000       0x35 ./Core/Src/global.o
- .debug_str     0x0000000000000000     0x2d86 ./Core/Src/global.o
- .comment       0x0000000000000000       0x54 ./Core/Src/global.o
+                0x0000000000000000       0x18 ./Core/Src/fsm.o
+ .debug_macro   0x0000000000000000       0x11 ./Core/Src/fsm.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/fsm.o
+ .debug_line    0x0000000000000000       0x32 ./Core/Src/fsm.o
+ .debug_str     0x0000000000000000     0x2d83 ./Core/Src/fsm.o
+ .comment       0x0000000000000000       0x54 ./Core/Src/fsm.o
  .ARM.attributes
-                0x0000000000000000       0x33 ./Core/Src/global.o
+                0x0000000000000000       0x33 ./Core/Src/fsm.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .group         0x0000000000000000        0xc ./Core/Src/led.o
+ .text          0x0000000000000000        0x0 ./Core/Src/led.o
+ .data          0x0000000000000000        0x0 ./Core/Src/led.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/led.o
+ .bss.horState  0x0000000000000000        0x4 ./Core/Src/led.o
+ .bss.verState  0x0000000000000000        0x4 ./Core/Src/led.o
+ .text.setLedH  0x0000000000000000      0x164 ./Core/Src/led.o
+ .text.setLedV  0x0000000000000000      0x164 ./Core/Src/led.o
+ .debug_info    0x0000000000000000      0x335 ./Core/Src/led.o
+ .debug_abbrev  0x0000000000000000      0x147 ./Core/Src/led.o
+ .debug_aranges
+                0x0000000000000000       0x28 ./Core/Src/led.o
+ .debug_ranges  0x0000000000000000       0x18 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x1e8 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x215 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0xc3 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0xd23 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000     0xde75 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/led.o
+ .debug_macro   0x0000000000000000     0x34a2 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x5bc ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x1cb ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x114 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x27 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x12f ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x1bc ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x57 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x87 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x183 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x140 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x8ed ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x69 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000      0x148 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/led.o
+ .debug_macro   0x0000000000000000       0x40 ./Core/Src/led.o
+ .debug_line    0x0000000000000000      0x701 ./Core/Src/led.o
+ .debug_str     0x0000000000000000    0x7fd0b ./Core/Src/led.o
+ .comment       0x0000000000000000       0x54 ./Core/Src/led.o
+ .debug_frame   0x0000000000000000       0x58 ./Core/Src/led.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./Core/Src/led.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -222,6 +326,109 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x148 ./Core/Src/main.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .group         0x0000000000000000        0xc ./Core/Src/segment.o
+ .text          0x0000000000000000        0x0 ./Core/Src/segment.o
+ .data          0x0000000000000000        0x0 ./Core/Src/segment.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/segment.o
+ .data.pinArr   0x0000000000000000       0x4d ./Core/Src/segment.o
+ .bss.segment_buffer
+                0x0000000000000000       0x10 ./Core/Src/segment.o
+ .text.set7SegH
+                0x0000000000000000       0x8c ./Core/Src/segment.o
+ .text.set7SegV
+                0x0000000000000000       0x8c ./Core/Src/segment.o
+ .text.scanLED  0x0000000000000000       0xbc ./Core/Src/segment.o
+ .debug_info    0x0000000000000000      0x3b1 ./Core/Src/segment.o
+ .debug_abbrev  0x0000000000000000      0x17d ./Core/Src/segment.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./Core/Src/segment.o
+ .debug_ranges  0x0000000000000000       0x20 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x1e8 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x215 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0xc3 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0xd23 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000     0xde75 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000     0x34a2 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x5bc ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x1cb ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x114 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x27 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x12f ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x1bc ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x57 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x87 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x183 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x140 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x8ed ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x69 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000      0x148 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/segment.o
+ .debug_macro   0x0000000000000000       0x40 ./Core/Src/segment.o
+ .debug_line    0x0000000000000000      0x776 ./Core/Src/segment.o
+ .debug_str     0x0000000000000000    0x7fd19 ./Core/Src/segment.o
+ .comment       0x0000000000000000       0x54 ./Core/Src/segment.o
+ .debug_frame   0x0000000000000000       0x7c ./Core/Src/segment.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./Core/Src/segment.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
@@ -643,6 +850,118 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/system_stm32f1xx.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/system_stm32f1xx.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/system_stm32f1xx.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .group         0x0000000000000000        0xc ./Core/Src/timer.o
+ .text          0x0000000000000000        0x0 ./Core/Src/timer.o
+ .data          0x0000000000000000        0x0 ./Core/Src/timer.o
+ .bss           0x0000000000000000        0x0 ./Core/Src/timer.o
+ .bss.timer1    0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.timer2    0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.timer3    0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.timer4    0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.timer5    0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.flag1     0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.flag2     0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.flag3     0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.flag4     0x0000000000000000        0x4 ./Core/Src/timer.o
+ .bss.flag5     0x0000000000000000        0x4 ./Core/Src/timer.o
+ .text.set1     0x0000000000000000       0x38 ./Core/Src/timer.o
+ .text.set2     0x0000000000000000       0x38 ./Core/Src/timer.o
+ .text.set3     0x0000000000000000       0x38 ./Core/Src/timer.o
+ .text.set4     0x0000000000000000       0x38 ./Core/Src/timer.o
+ .text.set5     0x0000000000000000       0x38 ./Core/Src/timer.o
+ .text.resetTimer
+                0x0000000000000000       0xe4 ./Core/Src/timer.o
+ .text.timerRun
+                0x0000000000000000       0xd4 ./Core/Src/timer.o
+ .debug_info    0x0000000000000000      0x3d1 ./Core/Src/timer.o
+ .debug_abbrev  0x0000000000000000      0x11f ./Core/Src/timer.o
+ .debug_aranges
+                0x0000000000000000       0x50 ./Core/Src/timer.o
+ .debug_ranges  0x0000000000000000       0x40 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1ef ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0xa9c ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x215 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0xc3 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0xd23 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000     0xde75 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000     0x34a2 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x5bc ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1cb ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x114 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x27 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x12f ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x1bc ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x57 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x87 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x183 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x140 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x8ed ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x69 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000      0x148 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/timer.o
+ .debug_macro   0x0000000000000000       0x40 ./Core/Src/timer.o
+ .debug_line    0x0000000000000000      0x7cc ./Core/Src/timer.o
+ .debug_str     0x0000000000000000    0x7fd22 ./Core/Src/timer.o
+ .comment       0x0000000000000000       0x54 ./Core/Src/timer.o
+ .debug_frame   0x0000000000000000      0x120 ./Core/Src/timer.o
+ .ARM.attributes
+                0x0000000000000000       0x2d ./Core/Src/timer.o
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f103c6ux.o
  .data          0x0000000000000000        0x0 ./Core/Startup/startup_stm32f103c6ux.o
  .bss           0x0000000000000000        0x0 ./Core/Startup/startup_stm32f103c6ux.o
@@ -2294,13 +2613,16 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
 LOAD ./Core/Src/button.o
-LOAD ./Core/Src/global.o
+LOAD ./Core/Src/fsm.o
+LOAD ./Core/Src/led.o
 LOAD ./Core/Src/main.o
+LOAD ./Core/Src/segment.o
 LOAD ./Core/Src/stm32f1xx_hal_msp.o
 LOAD ./Core/Src/stm32f1xx_it.o
 LOAD ./Core/Src/syscalls.o
 LOAD ./Core/Src/sysmem.o
 LOAD ./Core/Src/system_stm32f1xx.o
+LOAD ./Core/Src/timer.o
 LOAD ./Core/Startup/startup_stm32f103c6ux.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
 LOAD ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o

@@ -19,7 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include "global.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -88,6 +88,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM2_Init();
+  HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -97,7 +98,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  fsm_run();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

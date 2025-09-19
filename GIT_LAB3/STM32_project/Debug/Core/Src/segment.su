@@ -1,0 +1,3 @@
+segment.c:23:6:set7SegH	24	static
+segment.c:35:6:set7SegV	24	static
+segment.c:47:6:scanLED	16	static
