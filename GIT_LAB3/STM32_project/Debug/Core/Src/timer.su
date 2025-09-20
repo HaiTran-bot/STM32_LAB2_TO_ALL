@@ -5,3 +5,4 @@ timer.c:24:6:set4	16	static
 timer.c:28:6:set5	16	static
 timer.c:33:6:resetTimer	16	static
 timer.c:69:6:timerRun	4	static
+timer.c:101:6:HAL_TIM_PeriodElapsedCallback	16	static

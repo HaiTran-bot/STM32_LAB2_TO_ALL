@@ -25,28 +25,27 @@ int isButtonNoPressed(int no){
 }
 
 void getKeyInput(){
-	for(int i = 0; i < NO_BUTTON; i++){
-		KeyReg0[i] = KeyReg1[i];
-		KeyReg1[i] = KeyReg2[i];
-		KeyReg2[i] = HAL_GPIO_ReadPin(sw0_GPIO_Port, sw0_Pin << i);
-		if((KeyReg0[i] == KeyReg1[i]) && (KeyReg1[i] ==  KeyReg2[i])){
-			if(KeyReg3[i] != KeyReg2[i]){
-				KeyReg3[i] = KeyReg2[i]; //case press then release
-				if(KeyReg2[i] == PRESSED){
-					timerForKeyPress[i] = 100;
-					button_flag[i] = 1;
-				}
+    for (int i = 0; i < NO_BUTTON; i++){
+        KeyReg2[i] = KeyReg1[i];
+        KeyReg1[i] = KeyReg0[i];
+        KeyReg0[i] = HAL_GPIO_ReadPin(sw0_GPIO_Port, sw0_Pin << i);
 
-			}
-			else {
-				timerForKeyPress[i]--;
-				if(timerForKeyPress[i] == 0){
-					timerForKeyPress[i] = 100;
-					if(KeyReg3[i] == PRESSED){
-						button_flag[i] = 1;
-						}
-					}
-				}
-			}
-		}
-	}
+        if ((KeyReg1[i] == KeyReg0[i]) && (KeyReg1[i] == KeyReg2[i])){
+            if (KeyReg2[i] != KeyReg3[i]){
+                KeyReg3[i] = KeyReg2[i];
+                if (KeyReg0[i] == PRESSED){
+                    timerForKeyPress[i] = 100;
+                    button_flag[i] = 1;
+                }
+            } else {
+                timerForKeyPress[i]--;
+                if (timerForKeyPress[i] == 0){
+                    timerForKeyPress[i] = 10;
+                    if (KeyReg3[i] == PRESSED){
+                        button_flag[i] = 1;
+                    }
+                }
+            }
+        }
+    }
+}

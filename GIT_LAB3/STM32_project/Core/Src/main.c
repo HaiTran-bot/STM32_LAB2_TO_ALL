@@ -56,7 +56,6 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 /* USER CODE END 0 */
 
 /**
@@ -99,6 +98,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  fsm_run();
+//	  fsm_auto_hor();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -242,10 +242,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef * htim){
-	getKeyInput();
-	timerRun();
-}
+
 /* USER CODE END 4 */
 
 /**

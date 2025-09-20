@@ -70,9 +70,9 @@ void setLedV(int color){
 			verState = ALL;
 			break;
 		default:
-			HAL_GPIO_WritePin(red_h_GPIO_Port, red_v_Pin, LED_OFF);
-			HAL_GPIO_WritePin(yel_h_GPIO_Port, yel_v_Pin, LED_OFF);
-			HAL_GPIO_WritePin(grn_h_GPIO_Port, grn_v_Pin, LED_OFF);
+			HAL_GPIO_WritePin(red_v_GPIO_Port, red_v_Pin, LED_OFF);
+			HAL_GPIO_WritePin(yel_v_GPIO_Port, yel_v_Pin, LED_OFF);
+			HAL_GPIO_WritePin(grn_v_GPIO_Port, grn_v_Pin, LED_OFF);
 			verState = NONE;
 			break;
 	}

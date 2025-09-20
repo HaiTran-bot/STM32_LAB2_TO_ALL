@@ -23,24 +23,24 @@ GPIO_PinState pinArr[11][7] = {
 void set7SegH(int num){
 	if(num >= 0 && num <= 9){
 		for(int i = 0; i < 7;i++){
-			HAL_GPIO_WritePin(red_h_GPIO_Port, red_h_Pin << i, pinArr[num][i]);
+			HAL_GPIO_WritePin(a_h_GPIO_Port, a_h_Pin << i, pinArr[num][i]);
 		}
 	}
 	else{
 		for(int i = 0; i < 7;i++){
-			HAL_GPIO_WritePin(red_h_GPIO_Port, red_h_Pin << i, pinArr[10][i]);
+			HAL_GPIO_WritePin(a_h_GPIO_Port, a_h_Pin << i, pinArr[10][i]);
 	}
 	}
 }
 void set7SegV(int num){
 		if(num >= 0 && num <= 9){
 			for(int i = 0; i < 7;i++){
-				HAL_GPIO_WritePin(red_v_GPIO_Port, red_v_Pin << i, pinArr[num][i]);
+				HAL_GPIO_WritePin(a_v_GPIO_Port, a_v_Pin << i, pinArr[num][i]);
 			}
 		}
 		else{
 			for(int i = 0; i < 7;i++){
-				HAL_GPIO_WritePin(red_v_GPIO_Port, red_v_Pin << i, pinArr[10][i]);
+				HAL_GPIO_WritePin(a_v_GPIO_Port, a_v_Pin << i, pinArr[10][i]);
 		}
 	}
 }
@@ -72,7 +72,7 @@ void updateSegment(int x, int y, int z, int t){
 	segment_buffer[2] = z % 10;
 	segment_buffer[3] = t % 10;
 }
-void updateSegment2Digits(int a, int a){
+void updateSegment2Digits(int a, int b){
 	segment_buffer[0] = a / 10;
 	segment_buffer[1] = a % 10;
 	segment_buffer[2] = b / 10;
