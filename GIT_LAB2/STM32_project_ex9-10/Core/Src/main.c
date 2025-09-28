@@ -91,23 +91,27 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE END 2 */
-  setTimer(100);
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  setTimer1(10);
   while (1)
   {
     /* USER CODE END WHILE */
-	  	  if(flag == 1){
-		 	   displayLEDMatrix();
-		 	   static int shiftCounter = 0;
-		 	   shiftCounter++;
-		 	   if (shiftCounter >= 10) {
-		 	     shiftCounter = 0;
-		 	     shiftLeftMatrixCircular();
-		 	   }
-		 setTimer(100);
+//	  updateLEDMatrix(6);
+	  if (flag0 == 1)
+	 	  {
+	 		  if (index_led_matrix >= MAX_LED_MATRIX)
+	 		  {
+	 			  index_led_matrix = 0;
+	 		  }
+	 		  updateLEDMatrix(index_led_matrix++);
+	 		  setTimer0(50);
 	 }
-
+	  if (flag1 == 1){
+	  		  updateMatrixBuffer();
+	  		  setTimer1(500);
+	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

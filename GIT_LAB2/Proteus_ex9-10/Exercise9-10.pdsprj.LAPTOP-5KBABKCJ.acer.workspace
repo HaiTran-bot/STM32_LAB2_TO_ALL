@@ -11,6 +11,7 @@
      <ITEM name="Message Column Width">661</ITEM>
      <ITEM name="ShowGrid">No</ITEM>
      <ITEM name="Source Column Width">100</ITEM>
+     <ITEM name="Time Column Width">120</ITEM>
      <ITEM name="Version">100</ITEM>
     </PROPERTIES>
    </POPUP>
@@ -333,13 +334,17 @@
    </POPUP>
    <POPUP w="600" x="688" flags="0000002a" y="620" h="400" pid="100" iid="1">
     <PROPERTIES>
+     <ITEM name="Breakpoint 0">"",8000572,0000,30B2,12A0,168659896
+</ITEM>
+     <ITEM name="Breakpoint 1">"",80005FC,0000,79D1,12A0,1535615560
+</ITEM>
      <ITEM name="CaseSensitive">No</ITEM>
      <ITEM name="DISPADDRS">Yes</ITEM>
      <ITEM name="DISPLNUMS">No</ITEM>
      <ITEM name="DISPOPCODES">No</ITEM>
      <ITEM name="FIXUPBPTS">Yes</ITEM>
      <ITEM name="WordsOnly">No</ITEM>
-     <ITEM name="nBreakpoints">0</ITEM>
+     <ITEM name="nBreakpoints">2</ITEM>
     </PROPERTIES>
    </POPUP>
    <POPUP w="300" x="708" flags="0000000a" y="720" h="300" pid="101" iid="1">
