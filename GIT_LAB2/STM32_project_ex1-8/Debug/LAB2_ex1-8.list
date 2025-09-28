@@ -287,10 +287,10 @@ void update7SEG(int index) {
  80002c8:	20000134 	.word	0x20000134
 
 080002cc <updateClockBuffer>:
-//     }
 //}
 
-//ex5
+/* USER CODE BEGIN 0 */
+//ex5, ex6 and ex7 and ex8 ***take upd led7seg from ex3
 int hour = 22, minute = 15, second = 55;
 void updateClockBuffer(){
  80002cc:	b480      	push	{r7}
@@ -475,7 +475,6 @@ void timer_run() {
  800040c:	2000018c 	.word	0x2000018c
 
 08000410 <HAL_TIM_PeriodElapsedCallback>:
-/* USER CODE END 0 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  {
  8000410:	b580      	push	{r7, lr}
@@ -552,17 +551,17 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer0(10);
- 800046a:	200a      	movs	r0, #10
+  setTimer0(100); //ex5,6,7,8
+ 800046a:	2064      	movs	r0, #100	; 0x64
  800046c:	f7ff ff6e 	bl	800034c <setTimer0>
-  setTimer1(10);
- 8000470:	200a      	movs	r0, #10
+  setTimer1(100);
+ 8000470:	2064      	movs	r0, #100	; 0x64
  8000472:	f7ff ff85 	bl	8000380 <setTimer1>
 //	  	      }
 //	  	    setTimer0(1000);
 //	  }
 //	  updateClockBuffer();
-	  //ex8
+	  //ex8 (all of ex above)
 	  if(timer0_flag == 1){
  8000476:	4b23      	ldr	r3, [pc, #140]	; (8000504 <main+0xe0>)
  8000478:	681b      	ldr	r3, [r3, #0]

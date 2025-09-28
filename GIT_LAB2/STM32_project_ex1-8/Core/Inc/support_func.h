@@ -170,7 +170,7 @@ void update7SEG(int index) {
 //     }
 //}
 
-//ex4
+//ex4 and take ex3 upper part
 //int clock_led = 25;
 //int clock_dot = 100;
 //
@@ -188,7 +188,8 @@ void update7SEG(int index) {
 //     }
 //}
 
-//ex5
+/* USER CODE BEGIN 0 */
+//ex5, ex6 and ex7 and ex8 ***take upd led7seg from ex3
 int hour = 22, minute = 15, second = 55;
 void updateClockBuffer(){
 	led_buffer[0] = hour / 10;
@@ -197,8 +198,6 @@ void updateClockBuffer(){
 	led_buffer[3] = minute % 10;
 }
 
-//ex6 and ex7 and ex8
-/* USER CODE BEGIN 0 */
 int timer0_counter = 0;
 int timer0_flag = 0;
 int timer1_counter = 0;
@@ -227,10 +226,10 @@ void timer_run() {
            	   }
         }
 }
-/* USER CODE END 0 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
  {
  timer_run();
  }
+/* USER CODE END 0 */
 
 #endif /* INC_SUPPORT_FUNC_H_ */

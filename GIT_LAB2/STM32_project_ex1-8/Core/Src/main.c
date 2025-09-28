@@ -101,13 +101,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  setTimer0(10);
-  setTimer1(10);
+  setTimer0(100); //ex5,6,7,8
+  setTimer1(100);
   while (1)
   {
     /* USER CODE END WHILE */
 	  //ex5
-//	  second++;
+//	  	  second++;
 //	      if (second >= 60) {
 //	          second = 0;
 //	          minute++;
@@ -145,7 +145,7 @@ int main(void)
 //	  	    setTimer0(1000);
 //	  }
 //	  updateClockBuffer();
-	  //ex8
+	  //ex8 (all of ex above)
 	  if(timer0_flag == 1){
 	  		  HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
 	  	  	  second++;
