@@ -1,10 +1,5 @@
 support_func.h:24:6:display7SEG	24	static
-support_func.h:117:6:update7SEG	16	static
-support_func.h:194:6:updateClockBuffer	4	static
-support_func.h:207:6:setTimer0	16	static
-support_func.h:211:6:setTimer1	16	static
-support_func.h:215:6:timer_run	4	static
-support_func.h:229:6:HAL_TIM_PeriodElapsedCallback	16	static
+support_func.h:57:6:HAL_TIM_PeriodElapsedCallback	16	static
 main.c:66:5:main	8	static
 main.c:180:6:SystemClock_Config	72	static
 main.c:216:13:MX_TIM2_Init	32	static

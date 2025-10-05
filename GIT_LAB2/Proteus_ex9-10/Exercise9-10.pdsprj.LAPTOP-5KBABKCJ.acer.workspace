@@ -336,7 +336,7 @@
     <PROPERTIES>
      <ITEM name="Breakpoint 0">"",8000572,0000,30B2,12A0,168659896
 </ITEM>
-     <ITEM name="Breakpoint 1">"",80005FC,0000,79D1,12A0,1535615560
+     <ITEM name="Breakpoint 1">"",80005FC,0000,BE00,12A0,1535615560
 </ITEM>
      <ITEM name="CaseSensitive">No</ITEM>
      <ITEM name="DISPADDRS">Yes</ITEM>
