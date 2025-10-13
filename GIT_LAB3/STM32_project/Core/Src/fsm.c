@@ -174,7 +174,7 @@ void fsm_auto_ver(){
 void fsm_man() {
     switch (man_state) {
         case MAN_RED:
-        	updateSegment2Digits(man_Red, 22); //gtri va mode
+        	updateSegment2Digits(man_Red, 2); //gtri va mode
         	if(isButtonNoPressed(0) == 1){
         		man_Yel = 1;
         		man_state = MAN_YEL;
@@ -202,7 +202,7 @@ void fsm_man() {
             }
             break;
         case MAN_YEL:
-        	updateSegment2Digits(man_Yel, 33); //gtri va mode
+        	updateSegment2Digits(man_Yel, 3); //gtri va mode
         	        	if(isButtonNoPressed(0)== 1){
         	        		man_Grn = 1;
         	        		man_state = MAN_GRN;
@@ -231,7 +231,7 @@ void fsm_man() {
             break;
 
         case MAN_GRN:
-        	updateSegment2Digits(man_Grn, 44);
+        	updateSegment2Digits(man_Grn, 4);
         	        	if(isButtonNoPressed(0)== 1){
         	        		if (yel_duration > green_duration){
         	        		    green_duration += yel_duration;

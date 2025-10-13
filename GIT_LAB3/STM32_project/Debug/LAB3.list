@@ -947,10 +947,10 @@ void fsm_man() {
         default:
             break;
  80007fe:	e19c      	b.n	8000b3a <fsm_man+0x35a>
-        	updateSegment2Digits(man_Red, 22); //gtri va mode
+        	updateSegment2Digits(man_Red, 2); //gtri va mode
  8000800:	4ba6      	ldr	r3, [pc, #664]	; (8000a9c <fsm_man+0x2bc>)
  8000802:	681b      	ldr	r3, [r3, #0]
- 8000804:	2116      	movs	r1, #22
+ 8000804:	2102      	movs	r1, #2
  8000806:	4618      	mov	r0, r3
  8000808:	f000 fd48 	bl	800129c <updateSegment2Digits>
         	if(isButtonNoPressed(0) == 1){
@@ -1053,10 +1053,10 @@ void fsm_man() {
  80008c6:	f000 fdeb 	bl	80014a0 <set3>
             break;
  80008ca:	e138      	b.n	8000b3e <fsm_man+0x35e>
-        	updateSegment2Digits(man_Yel, 33); //gtri va mode
+        	updateSegment2Digits(man_Yel, 3); //gtri va mode
  80008cc:	4b74      	ldr	r3, [pc, #464]	; (8000aa0 <fsm_man+0x2c0>)
  80008ce:	681b      	ldr	r3, [r3, #0]
- 80008d0:	2121      	movs	r1, #33	; 0x21
+ 80008d0:	2103      	movs	r1, #3
  80008d2:	4618      	mov	r0, r3
  80008d4:	f000 fce2 	bl	800129c <updateSegment2Digits>
         	        	if(isButtonNoPressed(0)== 1){
@@ -1159,10 +1159,10 @@ void fsm_man() {
  8000992:	f000 fd85 	bl	80014a0 <set3>
             break;
  8000996:	e0d4      	b.n	8000b42 <fsm_man+0x362>
-        	updateSegment2Digits(man_Grn, 44);
+        	updateSegment2Digits(man_Grn, 4);
  8000998:	4b47      	ldr	r3, [pc, #284]	; (8000ab8 <fsm_man+0x2d8>)
  800099a:	681b      	ldr	r3, [r3, #0]
- 800099c:	212c      	movs	r1, #44	; 0x2c
+ 800099c:	2104      	movs	r1, #4
  800099e:	4618      	mov	r0, r3
  80009a0:	f000 fc7c 	bl	800129c <updateSegment2Digits>
         	        	if(isButtonNoPressed(0)== 1){
