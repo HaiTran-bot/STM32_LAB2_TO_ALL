@@ -20,7 +20,10 @@ void task3(void){
 void task4(void){
 	HAL_GPIO_TogglePin(led3_GPIO_Port, led3_Pin);
 }
-
 void task5(void){
+	HAL_GPIO_TogglePin(led4_GPIO_Port, led4_Pin);
+}
+
+void BlinkTaskTest(void){
 	HAL_GPIO_TogglePin(led_test_GPIO_Port, led_test_Pin);
 }

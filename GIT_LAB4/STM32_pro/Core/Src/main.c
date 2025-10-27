@@ -91,17 +91,20 @@ int main(void)
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
    SCH_Init();
-  HAL_TIM_Base_Start_IT(&htim2);
+   HAL_TIM_Base_Start_IT(&htim2);
+   	   SCH_Add_Task(BlinkTaskTest,0,100);
+  	  SCH_Add_Task(task1, 10, 50);
+       SCH_Add_Task(task2, 20, 100);
+       SCH_Add_Task(task3, 30, 150);
+       SCH_Add_Task(task4, 40, 200);
+       SCH_Add_Task(task5, 0, 250);
+    //  	 SCH_Add_Task(task1, 0, 50);
+    //      SCH_Add_Task(task2, 0, 100);
+    //      SCH_Add_Task(task3, 0, 150);
+    //      SCH_Add_Task(task4, 0, 200);
+    //      SCH_Add_Task(task5, 0, 200);
   /* USER CODE END 2 */
-   SCH_Add_Task(task1, 10, 50);
-   SCH_Add_Task(task2, 20, 100);
-   SCH_Add_Task(task3, 500, 0);
-   SCH_Add_Task(task4, 200, 200);
-//  	 SCH_Add_Task(task1, 0, 50);
-//      SCH_Add_Task(task2, 0, 100);
-//      SCH_Add_Task(task3, 0, 150);
-//      SCH_Add_Task(task4, 0, 200);
-//      SCH_Add_Task(task5, 0, 200);
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -169,7 +172,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 7999;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 10;
+  htim2.Init.Period = 9;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -207,10 +210,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, led0_Pin|led1_Pin|led2_Pin|led3_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(led_test_GPIO_Port, led_test_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, led_test_Pin|led0_Pin|led1_Pin|led2_Pin
+                          |led3_Pin|led4_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : button1_Pin */
   GPIO_InitStruct.Pin = button1_Pin;
@@ -218,19 +219,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(button1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : led0_Pin led1_Pin led2_Pin led3_Pin */
-  GPIO_InitStruct.Pin = led0_Pin|led1_Pin|led2_Pin|led3_Pin;
+  /*Configure GPIO pins : led_test_Pin led0_Pin led1_Pin led2_Pin
+                           led3_Pin led4_Pin */
+  GPIO_InitStruct.Pin = led_test_Pin|led0_Pin|led1_Pin|led2_Pin
+                          |led3_Pin|led4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : led_test_Pin */
-  GPIO_InitStruct.Pin = led_test_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(led_test_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
